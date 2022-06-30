@@ -21,7 +21,7 @@ padding-left: 0;
 .container {
     width: 1200px;
     margin:0 auto;
-    outline: 1px solid green; /*outline - убрать перед сдачей ДЗ;*/
+   /* outline: 1px solid green; */
    padding-left: 15px;
     padding-right: 15px;
 }
