@@ -11,7 +11,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet" />
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
     <link rel="stylesheet" href="./css/styles.css" />
 </head>
 
@@ -21,24 +21,25 @@
             <nav class="nav-header">
                 <a class="logo current" href="./index.html">Web<span class="logo-studio logo">Studio</span></a>
                 <ul class="list menu">
-                    <li><a class="link menu-link" href="./index.html">Студия</a></li>
-                    <li><a class="link menu-link current" href="./portfolio.html">Портфолио</a></li>
-                    <li><a class="link menu-link" href="/">Контакты</a></li>
+                    <li class="link-nav"><a class="link menu-link current" href="./index.html">Студия</a></li>
+                    <li class="link-nav"><a class="link menu-link" href="./portfolio.html">Портфолио</a></li>
+                    <li class="link-nav"><a class="link menu-link" href="/">Контакты</a></li>
                 </ul>
             </nav>
-            <div class="adress-container">
-                <ul class="list head-adress">
-                    <li><a class="link address-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                    <li><a class="link page-header-phone" href="tel:+380961111111">+38 096 111 11 11</a></li>
-                </ul>
-            </div>
+            <ul class="list head-adress">
+                <li class="address-item"><a class="link address-link"
+                        href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                <li class="address-item"><a class="link page-header-phone" href="tel:+380961111111">+38 096 111 11 11</a>
+                </li>
+            </ul>
         </div>
-    
     </header>
+
     <main>
-        <section class="nav-buttons"><div class="container">
-            <div class="container navigation-container">
+        <section class="section"><div class="container">
+           
             <h1 class="hidden">Навигация и портфолио</h1>
+
             <ul class="pages-nav-list list">
                 <li class="nav-item">
                     <button class="firstbtn btn" type="button">Все</button>
@@ -56,8 +57,6 @@
                     <button class="fifthbtn btn" type="button">Маркетинг</button>
                 </li>
             </ul>
-</div>
-<div class="container projects-container">
             <ul class="ready-projects list">
                 <li class="projects-item">
                     <img class="img" src="./img/ourpeople.jpg" alt="three people" width="370">
@@ -124,10 +123,9 @@
                 </li>
             </ul>
     </div>
-    </div>
         </section>
-    
     </main>
+
     <footer class="footer">
         <div class="container">
             <a class="logo" href="./index.html">Web<span class="logo-footer">Studio</span></a>
@@ -148,5 +146,4 @@
         </div>
     </footer>
 </body>
-
 </html>

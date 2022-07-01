@@ -30,11 +30,6 @@ padding-left: 0;
         padding-bottom: 94px;
 }
 
-.img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
 .list {
     list-style: none;
     display: flex;
@@ -62,13 +57,15 @@ padding-left: 0;
 
 /*header section*/
 
-
+.page-header {
+    border-bottom: 1px solid #ECECEC;
+}
 .page-header-container {
     display: flex;
     align-items: center;
     height: 80px;
-   padding-top: 24px;
-   padding-bottom: 25px;
+    padding-top: 24px;
+    padding-bottom: 25px;
 }
 .nav-header {
     display: flex;
@@ -77,8 +74,7 @@ padding-left: 0;
 }
 .adress-container {
     display: flex;
-margin-left: auto;
-
+    margin-left: auto;
 }
 
 .logo {
@@ -88,22 +84,22 @@ margin-left: auto;
     font-size: 26px;
     letter-spacing: 0.03em;
     line-height: 1.2;
-    font-weight: 700;
-  
+    font-weight: 700; 
 }
 .logo-studio {
     color: var(--primary-text-color);
 }
-
-    .logo-studio {
-margin-right: 93px;
-    }
-
+.menu {
+    margin-left: 93px;
+}
+.link-nav:not(:last-child) {
+    margin-right: 50px;
+}
 .menu .menu-link.current {
     color: var(--accent-color);
 }
 .menu-link {
-    margin-right: 50px;
+    /*margin-right: 50px;*/
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -114,12 +110,16 @@ margin-right: 93px;
 .menu-link:focus {
     color:var(--accent-color);
 }
+.head-adress {
+    margin-left: auto;
+}
 .address-link {
     color: var(--accent-color);
-    margin-right: 50px;
+}
+.address-item + .address-item {
+    margin-left: 50px;
 }
 .page-header-phone {
-    
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -157,11 +157,9 @@ margin-right: 93px;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--secondary-text-color);
-    width: 696px;
-    
+    width: 696px;  
 } 
 .central-section {
-  
     background: #2F303A;
     text-align: center;
     padding-top: 200px;
@@ -198,20 +196,21 @@ margin-right: 93px;
 .what-are-we-doing {
     padding-top: 0;
 }
-.what-title {
-    
-}
 .what-img:not(:last-child) {
     margin-right: 30px;
 }
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
 
 /* Our team section*/
 
 
 .team {
     background-color: #F5F4FA;
-    padding-top: 94px;
-    padding-bottom: 94px;
 }
 
 .team-list-name {
@@ -221,8 +220,7 @@ margin-right: 93px;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
-    padding-top: 30px;
-    padding-bottom: 30px;
+    margin-bottom: 10px;
 }
 .team-list-post {
     font-size: 16px;
@@ -230,7 +228,6 @@ margin-right: 93px;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--accent-text-color);
-    padding-bottom: 30px;
 }
 .team-list-item {
     background-color: var(--secondary-text-color);
@@ -239,6 +236,10 @@ margin-right: 93px;
     }
 .team-list-item:not(:nth-child(4n)) {
     margin-right: 30px;
+}
+.team-item-text {
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 /*footer section*/
@@ -254,38 +255,33 @@ margin-right: 93px;
     margin-bottom: 20px;
 }
 .link-footer {  
-font-style: normal;
-font-size: 14px;
-line-height: 1.7;
-letter-spacing: 0.03em;
-color:rgba(255, 255, 255, 0.6);;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color:rgba(255, 255, 255, 0.6);;
 }
 .link-address {
-font-style: normal;
- font-size: 14px;
-line-height: 1.7;
-letter-spacing: 0.03em;
-color: var(--secondary-text-color);
-
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: var(--secondary-text-color);
 }
 .footer-item:not(:last-child) {
     margin-bottom: 9px;
 }
 .footer-address {
-margin-top: 20px;
+    margin-top: 20px;
 }
 .footer-list {
     list-style: none;
 }
 
 
-
-
 /*=======Styles for Portfolio=======*/
 
-.nav-item {
-    margin-right: 8px;
-}
+
 .ready-projects {
     display: flex;
     flex-wrap: wrap;
@@ -296,37 +292,38 @@ margin-top: 20px;
 .address-link {
     color:  var(--accent-text-color);
 }
-
 .btn {
     font-family: inherit;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 1.6;
-        text-align: center;
-        letter-spacing: 0.03em;
-       cursor: pointer;
-        padding: 6px 22px;
-            border-radius: 4px;
-                border-color: transparent;
-                background-color: #F5F4FA;
+    font-weight: 500;
+     font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    letter-spacing: 0.03em;
+    cursor: pointer;
+     padding: 6px 22px;
+     border-radius: 4px;
+     border-color: transparent;
+    background-color: #F5F4FA;
 }
+
 .btn:hover, .btn:focus {
     color: var(--secondary-text-color);
     background-color: var(--accent-color);
 }
 .heading {
-        font-weight: 700;
-        font-size: 18px;
-        line-height: 2;
-        letter-spacing: 0.06em;
-        color: var(--primary-text-color);
+    font-weight: 700;
+     font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--primary-text-color);
+    margin-bottom: 4px;
 }
 .text {
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 1.9;
-        letter-spacing: 0.03em;
-        color: var(--accent-text-color);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.03em;
+    color: var(--accent-text-color);
 }
 .projects-box {
     padding: 20px 24px;
@@ -335,12 +332,12 @@ margin-top: 20px;
 }
 .hidden {
     position: absolute;
-        width: 1px;
-        height: 1px;
-        margin: -1px;
-        border: 0;
-        padding: 0;
-        white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
     overflow: hidden;
     clip: rect(0 0 0 0);
     clip-path: inset(100%);
@@ -348,16 +345,15 @@ margin-top: 20px;
 .pages-nav-list {
     display: flex;
     justify-content: center;
-    margin-bottom: 56px;
-   
+    margin-bottom: 56px; 
 }
 .nav-buttons {
     padding-top: 94px;
     padding-bottom: 94px;
 }
-.btn:not(:last-child) {
-    margin-right: 15px;
-        }
+.nav-item:not(:last-child) {
+    margin-right: 8px;
+}
 .ready-projects {
     display: flex;
     flex-wrap: wrap;
@@ -371,4 +367,3 @@ margin-top: 20px;
 .projects-item:not(:nth-last-child(-n + 3)) {
     margin-bottom: 30px;
 }
-.team-list-name 
